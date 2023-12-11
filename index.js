@@ -14,6 +14,9 @@ function startGame() {
     document.getElementById('game-container').innerHTML = '';
     cards = [];
     selectedCards = [];
+    // score = 0;
+
+    // updateProgressBar();
 
     const numbers = Array.from({ length: 5 }, (_, index) => index + 1);
 
@@ -58,6 +61,15 @@ function checkMatch() {
         card1.style.background = card2.style.background = 'linear-gradient(to bottom right, #006400, #008000)';
         card1.style.color = card2.style.color = 'white';
         selectedCards = [];
+        // score++;
+
+        // updateProgressBar();
+
+        window.alert("Great job, " + playerName + "! You found a match! Your score is now: " + score);
+
+            if (score === maxPairs) {
+                window.alert("Congratulations, " + playerName + "! You've won the game!");
+        }
     } else {
 
         setTimeout(() => {
@@ -67,3 +79,8 @@ function checkMatch() {
         }, 500);
     }
 }
+
+// function updateProgressBar() {
+//     const progress = (score / maxPairs) * 100;
+//     document.getElementById('progress-indicator').style.width = progress + '%';
+// }
