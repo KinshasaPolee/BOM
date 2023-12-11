@@ -2,6 +2,15 @@ let cards = [];
 let selectedCards = [];
 
 function startGame() {
+    playerName = window.prompt("Enter your name:");
+
+    if (!playerName) {
+        window.alert("Please enter your name to start the game.");
+        return;
+    }
+
+    window.alert("Welcome, " + playerName + "! Let's start the game.");
+
     document.getElementById('game-container').innerHTML = '';
     cards = [];
     selectedCards = [];
