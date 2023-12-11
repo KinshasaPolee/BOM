@@ -79,6 +79,7 @@ function checkMatch() {
         }, 500);
     }
 }
+// Use DOM manipulation to give a visual indication of the game's progress in some way.(all commented out parts are attempts at creating a progress bar)
 
 // function updateProgressBar() {
 //     const progress = (score / maxPairs) * 100;

@@ -1,4 +1,3 @@
-
 # Interacting with the Browser
 
 # Introduction
