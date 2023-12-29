@@ -67,8 +67,8 @@ function checkMatch() {
 
         window.alert("Great job, " + playerName + "! You found a match! Your score is now: " + score);
 
-            if (score === maxPairs) {
-                window.alert("Congratulations, " + playerName + "! You've won the game!");
+        if (score === maxPairs) {
+            window.alert("Congratulations, " + playerName + "! You've won the game!");
         }
     } else {
 
