@@ -14,9 +14,6 @@ function startGame() {
     document.getElementById('game-container').innerHTML = '';
     cards = [];
     selectedCards = [];
-    // score = 0;
-
-    // updateProgressBar();
 
     const numbers = Array.from({ length: 5 }, (_, index) => index + 1);
 
@@ -61,9 +58,6 @@ function checkMatch() {
         card1.style.background = card2.style.background = 'linear-gradient(to bottom right, #006400, #008000)';
         card1.style.color = card2.style.color = 'white';
         selectedCards = [];
-        // score++;
-
-        // updateProgressBar();
 
         window.alert("Great job, " + playerName + "! You found a match! Your score is now: " + score);
 
@@ -79,9 +73,3 @@ function checkMatch() {
         }, 500);
     }
 }
-// Use DOM manipulation to give a visual indication of the game's progress in some way.(all commented out parts are attempts at creating a progress bar)
-
-// function updateProgressBar() {
-//     const progress = (score / maxPairs) * 100;
-//     document.getElementById('progress-indicator').style.width = progress + '%';
-// }
