@@ -16,6 +16,3 @@ We recommend starting simple, with numbers. Since numbers can be easily compared
 
 # Part 3: Building the Game
 Once you have an idea in mind, begin building. Remember that this can be a very simple game! Along the way, you will encounter an issue with rendering while using alerts and prompts from the window object. These issues come into play due to a concept known as the Event Loop, which is beyond the scope of this module. For now, just understand that having a prompt or alert window open blocks anything from happening on the webpage itself. As a temporary workaround, you can delay your prompts and alerts using another window method, setTimeout. This is not a requirement. If your program does not work as intended due to the blocking behavior of window.alert and window.prompt, that is okay! You will have the opportunity to better understand this behavior and mitigate it using different tools and techniques in the future.
-
-# Part 4: Completion
-With your game finished, and tested, share your work with a peer. Discuss the differences in your approaches in order to form a better understanding of the variety of techniques available, even for a simple program like this one. Development is equal parts knowledge and creativity!
